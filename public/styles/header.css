@@ -5,12 +5,12 @@ header{
   top: 110px;
   display: flex;
   justify-content:space-around;
+  text-align: center;
   align-items: center;
   align-content: center;
   flex-direction: column;
   background-color: orange;
   background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
 }
-
-
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
