@@ -20,6 +20,8 @@ body {
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   align-content: center;
+  align-items: center;
+  justify-content:center;
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
@@ -27,8 +29,10 @@ body {
 main{
   position: absolute;
   width: 90%;
+  left: 5%;
   display: flex;
   top: 530px;
+  justify-self: center;
   align-content: center;
   align-items: center;
   justify-content:center;

@@ -1,0 +1,28 @@
+.new-tweet{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+form{
+  width: 100%;
+}
+#tweet-text{
+  width: 95%;
+}
+
+.undertweet{
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  align-self:flex-start;
+  background-color: #4056A1;
+  font-family: 'Bungee', cursive;
+  color: #FFFFFF;
+}
+.counter{
+  align-self: flex-end;
+}
