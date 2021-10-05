@@ -1,13 +1,18 @@
 $(document).ready(() => {
-  $('#tweet-text').keyup(() => {
+  // console.log(this);
+  $('#tweet-text').keyup(function() {
     // console.log($('.counter').text());
-    let currlen = $('#tweet-text').val().length;
+    let disCount = $(this).parent().children('.undertweet').children('.counter');
+    console.log(disCount.text());
+    // console.log($('.counter').text());
+    let currlen = $(this).val().length;
+    // console.log(currlen);
 
-    $('.counter').text(140 - currlen);
+    disCount.text(140 - currlen);
     if ((140 - currlen) < 0) {
-      $('.counter').css('color', '#FF0000');
+      disCount.css('color', '#FF0000');
     } else {
-      $('.counter').css('color', '#000000');
+      disCount.css('color', '#000000');
     }
 
   });
