@@ -31,3 +31,7 @@ article.tweet footer{
   border-style: solid;
   padding: 1px;
 }
+
+.fa-solid{
+  color: black;
+}

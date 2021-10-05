@@ -7,4 +7,12 @@ $(document).ready(() => {
     $(this).css('box-shadow','none');
     // console.log('hovering');
   });
+  $('.fa-solid').mouseover(function() {
+    $(this).css('color','#C2983B');
+    // console.log('hovering');
+  });
+  $('.fa-solid').mouseout(function() {
+    $(this).css('color','black');
+    // console.log('hovering');
+  });
 });
