@@ -14,7 +14,6 @@ $(document).ready(() => {
     } else {
       disCount.css('color', '#000000');
     }
-
   });
 
 });
