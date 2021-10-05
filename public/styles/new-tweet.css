@@ -10,19 +10,26 @@ form{
 }
 #tweet-text{
   width: 95%;
+  resize: none;
+  border-width: 0px;
+  border-bottom-width: 3px;
+  background-color:  #f4f1ec;;
 }
 
 .undertweet{
   display: flex;
   justify-content: space-between;
 }
-
 button{
   align-self:flex-start;
   background-color: #4056A1;
   font-family: 'Bungee', cursive;
   color: #FFFFFF;
+  left: 2.5%;
+  position: relative;
 }
 .counter{
+  position: absolute;
   align-self: flex-end;
+  right: 2.5%;
 }
