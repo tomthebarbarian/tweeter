@@ -11,7 +11,7 @@ article.tweet{
 }
 
 article.tweet header{
-  height: 30%;
+  height: 25%;
   position:unset;
   background-color: #f4f1ec;
   background-image: none;
@@ -23,7 +23,7 @@ article.tweet footer{
   justify-content:space-between;
   flex-direction: row;
   display: inline-flex;
-  height: 30%;
+  height: 25%;
   width: 100%;
   border-width: 0px;
   border-top-width: 3px;

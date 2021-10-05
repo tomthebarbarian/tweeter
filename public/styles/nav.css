@@ -1,11 +1,12 @@
-nav{
+body nav{
   height: 120px;
   width: 100%;
+  top: 0;
   background-color: #4056A1;
   color: #FFFFFF;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
 }
 
 span{
