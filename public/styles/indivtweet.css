@@ -29,4 +29,5 @@ article.tweet footer{
   border-top-width: 3px;
   border-color: black;
   border-style: solid;
+  padding: 1px;
 }
