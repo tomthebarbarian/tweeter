@@ -1,0 +1,32 @@
+article.tweet{
+  width: 95%;
+  display: flex;
+  justify-content:center;
+  text-align: left;
+  flex-direction: column;
+  margin: 2.5%;
+  height: 100px;;
+  border: solid black 2px;
+  padding: 1%;
+}
+
+article.tweet header{
+  height: 30%;
+  position:unset;
+  background-color: #f4f1ec;
+  background-image: none;
+  justify-content:space-between;
+  display: inline-flex;
+  flex-direction: row;
+}
+article.tweet footer{
+  justify-content:space-between;
+  flex-direction: row;
+  display: inline-flex;
+  height: 30%;
+  width: 100%;
+  border-width: 0px;
+  border-top-width: 3px;
+  border-color: black;
+  border-style: solid;
+}

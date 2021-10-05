@@ -39,3 +39,7 @@ main{
   text-align: center;
   flex-direction: column;
 }
+
+.maintweets{
+  width: 100%;
+}
