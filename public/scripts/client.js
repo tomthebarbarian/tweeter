@@ -58,13 +58,15 @@ $(() => {
     <article class = 'tweet'>
       <header>
         <div>
-        ${avatars}
+        <img src=${avatars}>
         ${name}
       </div>
       <div>
         ${handle}
       </div></header>
-      ${text}
+      <div>
+        ${text}
+      </div>
       <footer>
         <div>
           ${time}
