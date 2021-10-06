@@ -3,7 +3,7 @@ $(document).ready(() => {
   $('#tweet-text').keyup(function() {
     // console.log($('.counter').text());
     let disCount = $(this).parent().children('.undertweet').children('.counter');
-    console.log(disCount.text());
+    // console.log(disCount.text());
     // console.log($('.counter').text());
     let currlen = $(this).val().length;
     // console.log(currlen);
