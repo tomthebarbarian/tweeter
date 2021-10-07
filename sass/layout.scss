@@ -6,7 +6,6 @@
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,20 +13,20 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   align-content: center;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
 }
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-main {
+main{
   position: absolute;
   width: 90%;
   left: 5%;
@@ -35,19 +34,19 @@ main {
   top: 78%;
   justify-self: center;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
   text-align: center;
   flex-direction: column;
 }
 
-.maintweets {
+.maintweets{
   width: 100%;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  align-content: space-around;
+  align-content:space-around;
 }
 
-* {
+*{
   box-sizing: border-box;
 }

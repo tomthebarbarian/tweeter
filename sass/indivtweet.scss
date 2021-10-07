@@ -1,9 +1,9 @@
-article.tweet {
+article.tweet{
   width: 95%;
   max-width: 70ch;
   min-width: 35ch;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   text-align: left;
   flex-direction: column;
   margin: 2.5%;
@@ -11,25 +11,22 @@ article.tweet {
   border: solid black 0.1em;
   padding: 1%;
 }
-
 article.tweet header div {
   height: 100%;
 }
-
-article.tweet header {
+article.tweet header{
   height: 25%;
-  position: unset;
+  position:unset;
   background-color: #f4f1ec;
   background-image: none;
-  justify-content: space-between;
+  justify-content:space-between;
   flex-direction: row;
   display: flex;
 }
-
-article.tweet div {
+article.tweet div{
   height: 45%;
-  position: unset;
-  justify-content: flex-start;
+  position:unset;
+  justify-content:flex-start;
   flex-direction: row;
   display: flex;
 }
@@ -38,8 +35,8 @@ article.tweet footer div {
   height: 100%;
 }
 
-article.tweet footer {
-  justify-content: space-between;
+article.tweet footer{
+  justify-content:space-between;
   flex-direction: row;
   align-self: flex-end;
   display: inline-flex;
@@ -52,6 +49,6 @@ article.tweet footer {
   padding: 0.1em;
 }
 
-.fa-solid {
+.fa-solid{
   color: black;
 }

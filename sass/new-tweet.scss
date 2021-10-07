@@ -1,24 +1,23 @@
-.new-tweet {
+.new-tweet{
   display: none;
   justify-content: center;
   flex-direction: column;
   width: 100%;
 }
 
-form {
+form{
   width: 100%;
 }
-
-#tweet-text {
+#tweet-text{
   width: 95%;
   resize: none;
   border-width: 0;
   border-bottom-width: 0.2em;
-  background-color: #f4f1ec;
+  background-color:  #f4f1ec;;
 }
 
-.tweeterr {
-  display: none;
+.tweeterr{
+  display:none;
   border-style: solid;
   border-width: 0.2em;
   border-color: red;
@@ -27,21 +26,19 @@ form {
   margin: 2em;
 }
 
-.undertweet {
+.undertweet{
   display: flex;
   justify-content: space-between;
 }
-
-button {
-  align-self: flex-start;
+button{
+  align-self:flex-start;
   background-color: #4056A1;
-  font-family: "Bungee", cursive;
+  font-family: 'Bungee', cursive;
   color: #FFFFFF;
   left: 2.5%;
   position: relative;
 }
-
-.counter {
+.counter{
   position: absolute;
   align-self: flex-end;
   right: 2.5%;

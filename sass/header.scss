@@ -1,10 +1,10 @@
-header {
+header{
   position: absolute;
   height: 17em;
   width: 100%;
   top: 5em;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   text-align: center;
   align-items: center;
   align-content: center;
@@ -13,5 +13,5 @@ header {
   background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
   z-index: -1;
 }
-
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+

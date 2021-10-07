@@ -1,4 +1,4 @@
-body nav {
+body nav{
   height: 5em;
   width: 100%;
   top: 0;
@@ -10,24 +10,24 @@ body nav {
   z-index: 2;
 }
 
-span {
-  font-family: "Bungee", cursive;
+span{
+  font-family: 'Bungee', cursive;
   padding: 1.5em;
 }
 
-.newtwt {
+.newtwt{
   display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.fa-angle-double-down {
+.fa-angle-double-down{
   color: red;
   text-align: center;
 }
 
-.maintweets .totop {
+.maintweets .totop{
   height: 3em;
   width: 3em;
   max-width: 75px;
@@ -39,12 +39,12 @@ span {
   z-index: 2;
   border-radius: 100%;
   display: none;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   flex-direction: column;
 }
 
-.fa-angle-double-up {
+.fa-angle-double-up{
   color: #FFFFFF;
   text-align: center;
 }
