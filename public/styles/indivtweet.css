@@ -5,8 +5,8 @@ article.tweet{
   text-align: left;
   flex-direction: column;
   margin: 2.5%;
-  height: 180px;;
-  border: solid black 2px;
+  height: 17.7%;
+  border: solid black 0.1em;
   padding: 1%;
 }
 article.tweet header div {
@@ -40,11 +40,11 @@ article.tweet footer{
   display: inline-flex;
   height: 25%;
   width: 100%;
-  border-width: 0px;
-  border-top-width: 3px;
+  border-width: 0;
+  border-top-width: 0.2em;
   border-color: black;
   border-style: solid;
-  padding: 1px;
+  padding: 0.1em;
 }
 
 .fa-solid{

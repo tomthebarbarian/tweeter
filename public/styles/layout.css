@@ -31,7 +31,7 @@ main{
   width: 90%;
   left: 5%;
   display: flex;
-  top: 530px;
+  top: 78%;
   justify-self: center;
   align-content: center;
   align-items: center;
@@ -42,4 +42,8 @@ main{
 
 .maintweets{
   width: 100%;
+}
+
+*{
+  box-sizing: border-box;
 }
