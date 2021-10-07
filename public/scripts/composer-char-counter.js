@@ -15,4 +15,23 @@ $(document).ready(() => {
       disCount.css('color', '#000000');
     }
   });
+
+  // Click on new tweet
+  $('.fa-angle-double-down').click(function(event) {
+    if ($('.new-tweet').css('display') !== 'none') {
+      $('.new-tweet').css('display','none');
+      return;
+    } else {
+      $('.new-tweet').slideDown('slow');
+      return;
+    }
+  });
+
+  // click on to top
+  $('.totop').click(function(event) {
+    // console.log('clicked on double up');
+    $('html, body').animate({
+      scrollTop: $("body").offset().top
+    }, 1000);
+  });
 });
