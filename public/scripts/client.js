@@ -87,16 +87,16 @@ $('document').ready(() => {
     `;
     return tweetTempl;
   };
-  $('document').scroll(function(event) {
+  $(window).scroll(function(event) {
     console.log('scrolling');
     const mainOff = $('.maintweets').offset().top;
     if (mainOff > $(window).scrollTop()) {
-      $('.totop').css('display', 'initial');
-      $('nav').css('display', 'none');
+      $('.totop').css('display', 'none');
+      $('nav').css('display', 'flex');
       return;
     } else {
-      $('.totop').css('display', 'none');
-      $('nav').css('display', 'initial');
+      $('.totop').css('display', 'flex');
+      $('nav').css('display', 'none');
       return;
     }
   });
