@@ -23,7 +23,6 @@ article.tweet header{
 }
 article.tweet div{
   height: 45%;
-  margin: 2.5%;
   position:unset;
   justify-content:flex-start;
   flex-direction: row;
