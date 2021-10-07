@@ -30,7 +30,7 @@ body nav span {
   width: 3em;
   max-width: 75px;
   top: 85vh;
-  right: 45vw;
+  left: 45vw;
   background-color: red;
   color: #FFFFFF;
   position: fixed;
