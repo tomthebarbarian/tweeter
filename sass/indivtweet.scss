@@ -10,43 +10,42 @@ article.tweet{
   height: 17.7%;
   border: solid black 0.1em;
   padding: 1%;
-}
-article.tweet header div {
-  height: 100%;
-}
-article.tweet header{
-  height: 25%;
-  position:unset;
-  background-color: #f4f1ec;
-  background-image: none;
-  justify-content:space-between;
-  flex-direction: row;
-  display: flex;
-}
-article.tweet div{
-  height: 45%;
-  position:unset;
-  justify-content:flex-start;
-  flex-direction: row;
-  display: flex;
-}
-
-article.tweet footer div {
-  height: 100%;
-}
-
-article.tweet footer{
-  justify-content:space-between;
-  flex-direction: row;
-  align-self: flex-end;
-  display: inline-flex;
-  height: 25%;
-  width: 100%;
-  border-width: 0;
-  border-top-width: 0.2em;
-  border-color: black;
-  border-style: solid;
-  padding: 0.1em;
+  header{
+    height: 25%;
+    position:unset;
+    background-color: #f4f1ec;
+    background-image: none;
+    justify-content:space-between;
+    flex-direction: row;
+    display: flex;
+    div {
+      height: 100%;
+    }
+  }
+  div{
+    height: 45%;
+    position:unset;
+    justify-content:flex-start;
+    flex-direction: row;
+    display: flex;
+  }
+  
+  footer{
+    justify-content:space-between;
+    flex-direction: row;
+    align-self: flex-end;
+    display: inline-flex;
+    height: 25%;
+    width: 100%;
+    border-width: 0;
+    border-top-width: 0.2em;
+    border-color: black;
+    border-style: solid;
+    padding: 0.1em;
+    div {
+      height: 100%;
+    }
+  }
 }
 
 .fa-solid{

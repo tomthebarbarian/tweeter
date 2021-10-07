@@ -11,11 +11,6 @@ article.tweet {
   border: solid black 0.1em;
   padding: 1%;
 }
-
-article.tweet header div {
-  height: 100%;
-}
-
 article.tweet header {
   height: 25%;
   position: unset;
@@ -25,7 +20,9 @@ article.tweet header {
   flex-direction: row;
   display: flex;
 }
-
+article.tweet header div {
+  height: 100%;
+}
 article.tweet div {
   height: 45%;
   position: unset;
@@ -33,11 +30,6 @@ article.tweet div {
   flex-direction: row;
   display: flex;
 }
-
-article.tweet footer div {
-  height: 100%;
-}
-
 article.tweet footer {
   justify-content: space-between;
   flex-direction: row;
@@ -50,6 +42,9 @@ article.tweet footer {
   border-color: black;
   border-style: solid;
   padding: 0.1em;
+}
+article.tweet footer div {
+  height: 100%;
 }
 
 .fa-solid {

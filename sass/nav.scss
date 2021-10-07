@@ -2,12 +2,18 @@ body nav{
   height: 5em;
   width: 100%;
   top: 0;
-  background-color: #40a179;
+  background-color: #4240a1;
   color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   position: fixed;
   z-index: 2;
+
+  .fa-angle-double-down{
+    color: red;
+    text-align: center;
+  }
+  
 }
 
 span{
@@ -22,12 +28,8 @@ span{
   flex-direction: column;
 }
 
-.fa-angle-double-down{
-  color: red;
-  text-align: center;
-}
 
-.maintweets .totop{
+.totop{
   height: 3em;
   width: 3em;
   max-width: 75px;
@@ -42,9 +44,10 @@ span{
   justify-content:center;
   align-items: center;
   flex-direction: column;
+  
+  .fa-angle-double-up{
+    color: #FFFFFF;
+    text-align: center;
+  }
 }
 
-.fa-angle-double-up{
-  color: #FFFFFF;
-  text-align: center;
-}
