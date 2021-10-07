@@ -4,20 +4,7 @@
   flex-direction: column;
   width: 100%;
 }
-
-form {
-  width: 100%;
-}
-
-#tweet-text {
-  width: 95%;
-  resize: none;
-  border-width: 0;
-  border-bottom-width: 0.2em;
-  background-color: #f4f1ec;
-}
-
-.tweeterr {
+.new-tweet .tweeterr {
   display: none;
   border-style: solid;
   border-width: 0.2em;
@@ -26,13 +13,21 @@ form {
   height: 2em;
   margin: 2em;
 }
-
-.undertweet {
+.new-tweet form {
+  width: 100%;
+}
+.new-tweet form #tweet-text {
+  width: 95%;
+  resize: none;
+  border-width: 0;
+  border-bottom-width: 0.2em;
+  background-color: #f4f1ec;
+}
+.new-tweet form .undertweet {
   display: flex;
   justify-content: space-between;
 }
-
-button {
+.new-tweet form .undertweet button {
   align-self: flex-start;
   background-color: #4056A1;
   font-family: "Bungee", cursive;
@@ -40,8 +35,7 @@ button {
   left: 2.5%;
   position: relative;
 }
-
-.counter {
+.new-tweet form .undertweet .counter {
   position: absolute;
   align-self: flex-end;
   right: 2.5%;

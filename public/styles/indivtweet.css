@@ -46,7 +46,6 @@ article.tweet footer {
 article.tweet footer div {
   height: 100%;
 }
-
-.fa-solid {
+article.tweet footer div .fa-solid {
   color: black;
 }

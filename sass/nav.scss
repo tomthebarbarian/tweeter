@@ -14,12 +14,13 @@ body nav{
     text-align: center;
   }
   
+  span{
+    font-family: 'Bungee', cursive;
+    padding: 1.5em;
+  }
 }
 
-span{
-  font-family: 'Bungee', cursive;
-  padding: 1.5em;
-}
+
 
 .newtwt{
   display: flex;
@@ -27,7 +28,6 @@ span{
   justify-content: center;
   flex-direction: column;
 }
-
 
 .totop{
   height: 3em;
@@ -44,7 +44,7 @@ span{
   justify-content:center;
   align-items: center;
   flex-direction: column;
-  
+
   .fa-angle-double-up{
     color: #FFFFFF;
     text-align: center;

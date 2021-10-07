@@ -13,8 +13,7 @@ body nav .fa-angle-double-down {
   color: red;
   text-align: center;
 }
-
-span {
+body nav span {
   font-family: "Bungee", cursive;
   padding: 1.5em;
 }

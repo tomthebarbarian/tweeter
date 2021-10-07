@@ -10,6 +10,7 @@ article.tweet{
   height: 17.7%;
   border: solid black 0.1em;
   padding: 1%;
+
   header{
     height: 25%;
     position:unset;
@@ -18,10 +19,12 @@ article.tweet{
     justify-content:space-between;
     flex-direction: row;
     display: flex;
+
     div {
       height: 100%;
     }
   }
+
   div{
     height: 45%;
     position:unset;
@@ -29,7 +32,7 @@ article.tweet{
     flex-direction: row;
     display: flex;
   }
-  
+
   footer{
     justify-content:space-between;
     flex-direction: row;
@@ -44,10 +47,10 @@ article.tweet{
     padding: 0.1em;
     div {
       height: 100%;
+      .fa-solid{
+        color: black;
+      }
     }
   }
 }
 
-.fa-solid{
-  color: black;
-}
