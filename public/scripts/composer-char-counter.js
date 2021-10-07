@@ -38,7 +38,7 @@ $(document).ready(() => {
 
 // Scroll reveals
 $(window).scroll(function(event) {
-  console.log('scrolling');
+  // console.log('scrolling');
   const mainOff = $('.maintweets').offset().top;
   if (mainOff > $(window).scrollTop()) {
     $('.totop').css('display', 'none');
