@@ -27,11 +27,12 @@ span{
   text-align: center;
 }
 
-.totop{
-  height: 10%;
-  width: 10%;
-  top: 90%;
-  right: 0%;
+.maintweets .totop{
+  height: 3em;
+  width: 3em;
+  max-width: 75px;
+  top: 85vh;
+  right: 45vw;
   background-color: red;
   color: #FFFFFF;
   position: fixed;
@@ -40,7 +41,6 @@ span{
   display: none;
   justify-content:center;
   align-items: center;
-  align-content: center;
   flex-direction: column;
 }
 

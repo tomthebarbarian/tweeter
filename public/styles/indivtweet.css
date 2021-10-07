@@ -1,5 +1,7 @@
 article.tweet{
   width: 95%;
+  max-width: 70ch;
+  min-width: 35ch;
   display: flex;
   justify-content:space-between;
   text-align: left;

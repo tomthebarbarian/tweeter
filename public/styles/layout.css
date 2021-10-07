@@ -33,7 +33,6 @@ main{
   display: flex;
   top: 78%;
   justify-self: center;
-  align-content: center;
   align-items: center;
   justify-content:center;
   text-align: center;
@@ -42,6 +41,10 @@ main{
 
 .maintweets{
   width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content:space-around;
 }
 
 *{
