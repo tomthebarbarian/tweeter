@@ -8,7 +8,7 @@
 
 
 // on doc load
-$(() => {
+$('document').ready(() => {
   const data = [
     // {
     //   "user": {
@@ -87,26 +87,25 @@ $(() => {
     `;
     return tweetTempl;
   };
-  // use YYYY-MM-DD when saving date
 
-  // console.log(timeago.format('2021-10-01'));
-  // console.log($tweet); // to see what it looks like
-  // $tweet.timeago.format(new Date());
-  // renderTweets(data);
 
   $('.new-tweet form').submit(function(event) {
     // console.log('here is button');
     event.preventDefault();
+    $('.tweeterr').css('display', 'none');
     // alert('button pressed');
     const currReq = $(this).serialize();
     const currLen = $('#tweet-text').val();
-    // console.log('currReq len', currReq.length);
-    if (currLen.length < 0) {
-      alert('tweet too short');
+    // console.log('currlen len', currLen.length);
+    if (currLen.length < 1) {
+      // alert('tweet too short');
+      $('.tweeterr').text('tweet too short');
+      $('.tweeterr').css('display', 'initial');
       return;
     }
     if (currLen.length > 140) {
-      alert('tweet too long');
+      $('.tweeterr').text('tweet too long');
+      $('.tweeterr').css('display', 'initial');
       return;
     }
     $.ajax({

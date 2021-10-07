@@ -15,5 +15,4 @@ $(document).ready(() => {
       disCount.css('color', '#000000');
     }
   });
-
 });
