@@ -43,7 +43,12 @@ $(() => {
       $('.maintweets').prepend(currTweet);
     }
   };
-  
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function(tweet) {
     // let $tweet = /* Your code for creating the tweet element */
     // ...
@@ -58,18 +63,18 @@ $(() => {
     <article class = 'tweet'>
       <header>
         <div>
-        <img src=${avatars}>
-        ${name}
+        <img src=${escape(avatars)}>
+        ${escape(name)}
       </div>
       <div>
-        ${handle}
+        ${escape(handle)}
       </div></header>
       <div>
-        ${text}
+        ${escape(text)}
       </div>
       <footer>
         <div>
-          ${time}
+          ${escape(time)}
         </div>
         <div>
           <!-- buttons -->
