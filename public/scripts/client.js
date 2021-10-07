@@ -88,6 +88,16 @@ $('document').ready(() => {
     return tweetTempl;
   };
 
+  // Click on new tweet
+  $('.fa-angle-double-down').click(function(event) {
+    if ($('.new-tweet').css('display') !== 'none') {
+      $('.new-tweet').css('display','none');
+      return;
+    } else {
+      $('.new-tweet').slideDown('slow');
+      return;
+    }
+  });
 
   $('.new-tweet form').submit(function(event) {
     // console.log('here is button');
@@ -99,13 +109,11 @@ $('document').ready(() => {
     // console.log('currlen len', currLen.length);
     if (currLen.length < 1) {
       // alert('tweet too short');
-      $('.tweeterr').text('tweet too short');
-      $('.tweeterr').css('display', 'initial');
+      $('.tweeterr').text('tweet too short').slideDown('slow');
       return;
     }
     if (currLen.length > 140) {
-      $('.tweeterr').text('tweet too long');
-      $('.tweeterr').css('display', 'initial');
+      $('.tweeterr').text('tweet too long').slideDown('slow');
       return;
     }
     $.ajax({

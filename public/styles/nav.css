@@ -26,3 +26,25 @@ span{
   color: red;
   text-align: center;
 }
+
+.totop{
+  height: 10%;
+  width: 10%;
+  top: 90%;
+  right: 0%;
+  background-color: red;
+  color: #FFFFFF;
+  position: fixed;
+  z-index: 2;
+  border-radius: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.fa-angle-double-up{
+  color: #FFFFFF;
+  text-align: center;
+}
