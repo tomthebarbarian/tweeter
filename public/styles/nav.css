@@ -37,7 +37,7 @@ span{
   position: fixed;
   z-index: 2;
   border-radius: 100%;
-  display: flex;
+  display: none;
   justify-content:center;
   align-items: center;
   align-content: center;

@@ -87,20 +87,6 @@ $('document').ready(() => {
     `;
     return tweetTempl;
   };
-  $(window).scroll(function(event) {
-    console.log('scrolling');
-    const mainOff = $('.maintweets').offset().top;
-    if (mainOff > $(window).scrollTop()) {
-      $('.totop').css('display', 'none');
-      $('nav').css('display', 'flex');
-      return;
-    } else {
-      $('.totop').css('display', 'flex');
-      $('nav').css('display', 'none');
-      return;
-    }
-  });
-
 
   $('.new-tweet form').submit(function(event) {
     // console.log('here is button');
