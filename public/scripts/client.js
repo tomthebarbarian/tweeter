@@ -94,20 +94,44 @@ $(() => {
     event.preventDefault();
     // alert('button pressed');
     const currReq = $(this).serialize();
-    // console.log('currReq', currReq);
+    const currLen = $('#tweet-text').val();
+    // console.log('currReq len', currReq.length);
+    if (currLen.length < 0) {
+      alert('tweet too short');
+      return;
+    }
+    if (currLen.length > 140) {
+      alert('tweet too long');
+      return;
+    }
     $.ajax({
       url: '/tweets/',
       method: 'POST',
-      dataType: 'json',
       data: currReq,
       success: (input) => {
-        console.log('made a new tweet', input);
-        // renderTweets(input);
+        console.log('successfully made a new tweet');
+        
       },
       error: (err) => {
-        console.log('dere was err');
+        console.log('dere was err in post', err);
       }
-    });
+    }).then(
+      (input) => {
+        $.ajax({
+          url: '/tweets/',
+          method: 'GET',
+          dataType: 'json',
+          success: (input) => {
+            // console.log('heres twt data', input);
+            renderTweets([input[input.length - 1]]);
+          },
+          error: (err) => {
+            console.log('dere was err in loadTwt');
+          }
+        });
+      }
+    );
+    return;
   });
 
   const loadTweets = () => {
