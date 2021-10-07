@@ -99,6 +99,14 @@ $('document').ready(() => {
     }
   });
 
+  // click on to top
+  $('.totop').click(function(event) {
+    // console.log('clicked on double up');
+    $('html, body').animate({
+      scrollTop: $("body").offset().top
+    }, 1000);
+  });
+
   $('.new-tweet form').submit(function(event) {
     // console.log('here is button');
     event.preventDefault();
