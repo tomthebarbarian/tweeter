@@ -9,31 +9,7 @@
 
 // on doc load
 $('document').ready(() => {
-  const data = [
-    // {
-    //   "user": {
-    //     "name": "Newton",
-    //     "avatars": "https://i.imgur.com/73hZDYK.png",
-    //     "handle": "@SirIsaac"
-    //   },
-    //   "content": {
-    //     "text": "If I have seen further it is by standing on the shoulders of giants"
-    //   },
-    //   "created_at": 1461116232227
-    // },
-    // {
-    //   "user": {
-    //     "name": "Descartes",
-    //     "avatars": "https://i.imgur.com/nlhLi3I.png",
-    //     "handle": "@rd" },
-    //   "content": {
-    //     "text": "Je pense , donc je suis"
-    //   },
-    //   "created_at": 1461113959088
-    // },
-  ];
   
-  // const $tweet = $(`<article class="tweet">Hello world</article>`);
   const renderTweets = function(tweets) {
     // loops through tweets
     // calls createTweetElement for each tweet
@@ -50,9 +26,6 @@ $('document').ready(() => {
   };
 
   const createTweetElement = function(tweet) {
-    // let $tweet = /* Your code for creating the tweet element */
-    // ...
-    // return $tweet;
     const {user, content, created_at} = tweet;
     const {name, avatars, handle} = user;
     const {text} = content;
@@ -89,15 +62,11 @@ $('document').ready(() => {
   };
 
   $('.new-tweet form').submit(function(event) {
-    // console.log('here is button');
     event.preventDefault();
     $('.tweeterr').css('display', 'none');
-    // alert('button pressed');
     const currReq = $(this).serialize();
     const currLen = $('#tweet-text').val();
-    // console.log('currlen len', currLen.length);
     if (currLen.length < 1) {
-      // alert('tweet too short');
       $('.tweeterr').text('tweet too short').slideDown('slow');
       return;
     }
@@ -123,7 +92,6 @@ $('document').ready(() => {
           method: 'GET',
           dataType: 'json',
           success: (input) => {
-            // console.log('heres twt data', input);
             renderTweets([input[input.length - 1]]);
           },
           error: (err) => {
@@ -141,7 +109,6 @@ $('document').ready(() => {
       method: 'GET',
       dataType: 'json',
       success: (input) => {
-        // console.log('heres twt data', input);
         renderTweets(input);
       },
       error: (err) => {
@@ -150,5 +117,4 @@ $('document').ready(() => {
     });
   };
   loadTweets();
-  // renderTweets(data);
 });
