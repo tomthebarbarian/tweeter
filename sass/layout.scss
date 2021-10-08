@@ -50,20 +50,8 @@ main{
   box-sizing: border-box;
 }
 
-@media (max-width: 800px) {
-  main{
-    width: 95%;
-  }
-  .responsive .profile{
-    width: 95%;
-    margin: 2.5%;
-  }
-  .totop{
-    left: 45vw;
-  }
-}
 
-@media (min-width: 800px) {
+@media (max-width: 900px) {
   main {
     width: 95%;
   }
@@ -75,19 +63,8 @@ main{
     left: 45vw;
   }
 }
+
 @media (min-width: 900px) {
-  main {
-    width: 75%;
-  }
-  .responsive .profile {
-    width: 70%;
-    margin: 2.5%;
-  }
-  .totop{
-    left: 32vw;
-  }
-}
-@media (min-width: 1000px) {
   .responsive{
     top:8em;
     display: inline-flex;
@@ -96,12 +73,15 @@ main{
     align-content: space-between;
     width: 100%;
     position: absolute
+
+
   };
   .responsive .profile {
     width: 45%;
     position: static;
     align-self: flex-start;
   }
+  
   .responsive .container {
     width: 45%;
     position: static;
