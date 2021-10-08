@@ -20,19 +20,19 @@ This repository is my version of the project: I built upon it to practice my HTM
 - timeago
 
 # Features
-!["starting page"](docs/CreateNewUrl.png)
+!["starting page"](docs/startpage.png)
 The starting page
 
 ## Creating a new tweet $ ajax
-!["create new tweet"](docs/CreateNewUrl.png)
+!["create new tweet"](docs/newtweet.png)
 Here's the create new tweet dialogue
 
 ## Some Error messages
-!["invalid tweets"](docs/CreateNewUrl.png)
+!["invalid tweets"](docs/error.png)
 Here's some error messages for invalid tweets
 
 ## Event listeners
-!["interactivity"](docs/CreateNewUrl.png)
+!["interactivity"](docs/mouseover.png)
 Here's the interactivity on mouseover
 
 
