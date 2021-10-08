@@ -44,55 +44,57 @@
     <div class = 'totop'>
       <i class="fas fa-angle-double-up"></i>
     </div>
-    <header>
-      <div class="mainimg">
-        <div>
-            <img src="/images/profile-hex.png"> 
-        </div>
-        <br>
-        <div>
-            <h2>Your Name</h2>
-        </div>
-      </div>
-  </header>
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <!-- Making new Tweet -->
-      <section class="new-tweet">
-        <div class = 'tweeterr'> placehold vals</div>
-        <form action = '/tweets/' method="POST")>
-          <textarea name="text" placeholder='What are you humming about?'id="tweet-text"></textarea>
-          <div class="undertweet">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <section class = 'maintweets'>
-        <article class = 'tweet'>
-          <header>
-            <div>
-            <i class="fa-solid fa-user"></i>
-            name
-          </div>
+    <section class="responsive">
+      <header class = 'profile'>
+        <div class="mainimg">
           <div>
-            handle
-          </div></header>
-          Actual tweet goes here
-          <footer>
-            <div>
-              Time,
+              <img src="/images/profile-hex.png"> 
+          </div>
+          <br>
+          <div>
+              <h2>Your Name</h2>
+          </div>
+        </div>
+      </header>
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <!-- Making new Tweet -->
+        <section class="new-tweet">
+          <div class = 'tweeterr'> placehold vals</div>
+          <form action = '/tweets/' method="POST")>
+            <textarea name="text" placeholder='What are you humming about?'id="tweet-text"></textarea>
+            <div class="undertweet">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        <section class = 'maintweets'>
+          <article class = 'tweet'>
+            <header>
+              <div>
+              <i class="fa-solid fa-user"></i>
+              name
             </div>
             <div>
-              <!-- buttons -->
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-thumbs-up"></i>
-              <i class="fa-solid fa-retweet"></i>
-            </div>
-        </footer>
-        </article>
+              handle
+            </div></header>
+            Actual tweet goes here
+            <footer>
+              <div>
+                Time,
+              </div>
+              <div>
+                <!-- buttons -->
+                <i class="fa-solid fa-flag"></i>
+                <i class="fa-solid fa-thumbs-up"></i>
+                <i class="fa-solid fa-retweet"></i>
+              </div>
+          </footer>
+          </article>
 
-      </section>
-    </main>
+        </section>
+      </main>
+    </section>
   </body>
 </html>

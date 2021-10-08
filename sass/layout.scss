@@ -29,7 +29,6 @@ body {
 main{
   position: absolute;
   width: 90%;
-  left: 5%;
   display: flex;
   top: 23em;
   justify-self: center;
@@ -49,4 +48,71 @@ main{
 
 *{
   box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+  main{
+    width: 95%;
+  }
+  .responsive .profile{
+    width: 95%;
+    margin: 2.5%;
+  }
+  .totop{
+    left: 45vw;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    width: 95%;
+  }
+  .responsive .profile {
+    width: 90%;
+    margin: 2.5%;
+  }
+  .totop{
+    left: 45vw;
+  }
+}
+@media (min-width: 900px) {
+  main {
+    width: 75%;
+  }
+  .responsive .profile {
+    width: 70%;
+    margin: 2.5%;
+  }
+  .totop{
+    left: 32vw;
+  }
+}
+@media (min-width: 1000px) {
+  .responsive{
+    top:8em;
+    display: inline-flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-content: space-between;
+    width: 100%;
+    position: absolute
+  };
+  .responsive .profile {
+    width: 45%;
+    position: static;
+    align-self: flex-start;
+  }
+  .responsive .container {
+    width: 45%;
+    position: static;
+    align-self: auto;
+  }
+
+  .container .new-tweet{
+    display: none;
+  }
+
+  .totop{
+    left: 70vw;
+  }
 }

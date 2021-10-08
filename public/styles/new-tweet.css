@@ -36,7 +36,6 @@
   position: relative;
 }
 .new-tweet form .undertweet .counter {
-  position: absolute;
   align-self: flex-end;
   right: 2.5%;
 }

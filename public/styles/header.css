@@ -1,4 +1,4 @@
-header {
+.profile {
   position: absolute;
   height: 17em;
   width: 100%;
@@ -7,6 +7,7 @@ header {
   justify-content: center;
   text-align: center;
   align-items: center;
+  align-self: center;
   flex-direction: column;
   background-color: orange;
   background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
