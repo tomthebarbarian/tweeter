@@ -9,16 +9,50 @@
 
 // on doc load
 $('document').ready(() => {
-  
-  const renderTweets = function(tweets) {
+  const renderTweets = function(tweets, last = false) {
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
-    for (let elem of tweets) {
+    let tempTweets = tweets;
+    if (last) {
+      tempTweets = [tempTweets[tempTweets.length - 1]];
+    }
+    for (let elem of tempTweets) {
       let currTweet = createTweetElement(elem);
       $('.maintweets').prepend(currTweet);
     }
   };
+
+  const loadTweets = (last = false) => {
+    return $.ajax({
+      url: '/tweets/',
+      method: 'GET',
+      dataType: 'json',
+      success: (input) => {
+        console.log('loading tweets');
+        renderTweets(input, last);
+      },
+      error: (err) => {
+        console.log('dere was err in loadTwt');
+      }
+    });
+  };
+
+  const submitTweets = (inDat) => {
+    return $.ajax({
+      url: '/tweets/',
+      method: 'POST',
+      data: inDat,
+      success: (input) => {
+        console.log('successfully made a new tweet');
+        return;
+      },
+      error: (err) => {
+        console.log('dere was err in submit tweets', err);
+      }
+    });
+  };
+
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -74,47 +108,8 @@ $('document').ready(() => {
       $('.tweeterr').text('tweet too long').slideDown('slow');
       return;
     }
-    $.ajax({
-      url: '/tweets/',
-      method: 'POST',
-      data: currReq,
-      success: (input) => {
-        console.log('successfully made a new tweet');
-        
-      },
-      error: (err) => {
-        console.log('dere was err in post', err);
-      }
-    }).then(
-      (input) => {
-        $.ajax({
-          url: '/tweets/',
-          method: 'GET',
-          dataType: 'json',
-          success: (input) => {
-            renderTweets([input[input.length - 1]]);
-          },
-          error: (err) => {
-            console.log('dere was err in loadTwt');
-          }
-        });
-      }
-    );
-    return;
+    return submitTweets(currReq).then(loadTweets(true));
   });
 
-  const loadTweets = () => {
-    $.ajax({
-      url: '/tweets/',
-      method: 'GET',
-      dataType: 'json',
-      success: (input) => {
-        renderTweets(input);
-      },
-      error: (err) => {
-        console.log('dere was err in loadTwt');
-      }
-    });
-  };
   loadTweets();
 });
