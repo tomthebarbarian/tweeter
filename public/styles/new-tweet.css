@@ -4,6 +4,7 @@
   flex-direction: column;
   width: 100%;
 }
+
 .new-tweet .tweeterr {
   display: none;
   border-style: solid;
@@ -13,9 +14,11 @@
   height: 2em;
   margin: 2em;
 }
+
 .new-tweet form {
   width: 100%;
 }
+
 .new-tweet form #tweet-text {
   width: 95%;
   resize: none;
@@ -23,10 +26,12 @@
   border-bottom-width: 0.2em;
   background-color: #f4f1ec;
 }
+
 .new-tweet form .undertweet {
   display: flex;
   justify-content: space-between;
 }
+
 .new-tweet form .undertweet button {
   align-self: flex-start;
   background-color: #4056A1;
@@ -35,6 +40,7 @@
   left: 2.5%;
   position: relative;
 }
+
 .new-tweet form .undertweet .counter {
   align-self: flex-end;
   right: 2.5%;
