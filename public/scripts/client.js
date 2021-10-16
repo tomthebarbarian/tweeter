@@ -4,9 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's
  * document ready function
  */
-
-
-
 // on doc load
 $('document').ready(() => {
   const renderTweets = function(tweets, last = false) {
@@ -108,7 +105,12 @@ $('document').ready(() => {
       $('.tweeterr').text('tweet too long').slideDown('slow');
       return;
     }
-    return submitTweets(currReq).then(loadTweets(true));
+    // Empty tweet box
+    $('#tweet-text').val('');
+    let counter = $(this).children('.undertweet').children('.counter');
+    counter.text(140);
+    // Submit
+    return submitTweets(currReq).then(() => loadTweets(true));
   });
 
   loadTweets();
