@@ -1,3 +1,4 @@
+// Functions for hovering over tweets
 $(document).bind('DOMSubtreeModified',() => {
   $('.tweet').mouseover(function(event) {
     $(this).css('box-shadow','5px 5px 5px lightblue');

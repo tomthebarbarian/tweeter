@@ -107,7 +107,7 @@ $('document').ready(() => {
       $('.tweeterr').text('tweet too long').slideDown('slow');
       return;
     }
-    // Empty and Resetss tweet box
+    // Empty and Resets tweet box
     $('#tweet-text').val('');
     let counter = $(this).children('.undertweet').children('.counter');
     counter.text(140);
