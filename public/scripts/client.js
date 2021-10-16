@@ -50,6 +50,7 @@ $('document').ready(() => {
     });
   };
 
+  // Parameterize inpute strings
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -92,6 +93,7 @@ $('document').ready(() => {
     return tweetHTML;
   };
 
+  // Submitting new Tweet
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
     $('.tweeterr').css('display', 'none');
@@ -105,7 +107,7 @@ $('document').ready(() => {
       $('.tweeterr').text('tweet too long').slideDown('slow');
       return;
     }
-    // Empty tweet box
+    // Empty and Resetss tweet box
     $('#tweet-text').val('');
     let counter = $(this).children('.undertweet').children('.counter');
     counter.text(140);

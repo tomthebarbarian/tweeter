@@ -1,8 +1,8 @@
 $(document).ready(() => {
+  // Counter for input tweets
   $('#tweet-text').keyup(function() {
     let disCount = $(this).parent().children('.undertweet').children('.counter');
     let currlen = $(this).val().length;
-
     disCount.text(140 - currlen);
     if ((140 - currlen) < 0) {
       disCount.css('color', '#FF0000');
@@ -22,7 +22,7 @@ $(document).ready(() => {
     }
   });
 
-  // click on to top
+  // click on 'totop'
   $('.totop').click(function(event) {
     $('html, body').animate({
       scrollTop: $("body").offset().top
