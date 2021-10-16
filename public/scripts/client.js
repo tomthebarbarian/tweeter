@@ -35,11 +35,11 @@ $('document').ready(() => {
     });
   };
 
-  const submitTweets = (inDat) => {
+  const submitTweets = (inData) => {
     return $.ajax({
       url: '/tweets/',
       method: 'POST',
-      data: inDat,
+      data: inData,
       success: (input) => {
         console.log('successfully made a new tweet');
         return;
@@ -63,7 +63,7 @@ $('document').ready(() => {
 
     let time = timeago.format(created_at);
 
-    let tweetTempl = `
+    let tweetHTML = `
     <article class = 'tweet'>
       <header>
         <div>
@@ -89,13 +89,13 @@ $('document').ready(() => {
     </footer>
     </article>
     `;
-    return tweetTempl;
+    return tweetHTML;
   };
 
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
     $('.tweeterr').css('display', 'none');
-    const currReq = $(this).serialize();
+    const tweetText = $(this).serialize();
     const currLen = $('#tweet-text').val();
     if (currLen.length < 1) {
       $('.tweeterr').text('tweet too short').slideDown('slow');
@@ -110,7 +110,7 @@ $('document').ready(() => {
     let counter = $(this).children('.undertweet').children('.counter');
     counter.text(140);
     // Submit
-    return submitTweets(currReq).then(() => loadTweets(true));
+    return submitTweets(tweetText).then(() => loadTweets(true));
   });
 
   loadTweets();
